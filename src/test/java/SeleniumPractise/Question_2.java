@@ -25,9 +25,14 @@ public class Question_2 {
 //  12-Daha sonra web sayfamiza tekrar donelim ve oldugumuz sayfayi kapatalim
 //  13-En son adim olarak butun sayfalarimizi kapatmis olalim
          */
+        //  1-driver olusturalim
         System.setProperty("webdriver.chrome.driver","src/driver/chromedriver.exe");
+        //  2-java class'imiza chromedriver.exe'yi tanitalim
         WebDriver driver=new ChromeDriver();
+        //  3-driver'in tum ekrani kaplamasini saglayalim
         driver.manage().window().maximize();
+        //  4-driver'a sayfanın yuklenmesini 10.000 milisaniye (10 saniye) boyunca beklesini
+        //    söyleyelim. Eger oncesinde sayfa yuklenirse, beklemeyi bıraksin.
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
 
@@ -35,22 +40,23 @@ public class Question_2 {
         driver.get("https://www.sahibinden.com/");
 
         //  6-bu web adresinin sayfa basligini(title) ve adres(url)ini alalim.
-        String shbTitle=driver.getTitle();
-        String shbUrl= driver.getCurrentUrl();
+        String shbndnSayfaTitle= driver.getTitle();
+        String shbndnSayfaUrl=driver.getCurrentUrl();
 
-        System.out.println("shbTitle="+shbTitle);
-        System.out.println("shbUrl="+shbUrl);
+        System.out.println("shbndnSayfaUrl = " + shbndnSayfaUrl);
+        System.out.println("shbndnSayfaUrl = " + shbndnSayfaUrl);
+
 
 
         //  7-title ve url'nin "Oto" kelimesinin icerip icermedigini kontrol edelim
 
-        if(shbTitle.contains("Oto"))
+        if(shbndnSayfaTitle.contains("Oto"))
             System.out.println("Oto yazisi vardir");
 
         else
             System.out.println("Oto yazisi yoktur");
 
-        if(shbUrl.contains("Oto"))
+        if(shbndnSayfaUrl.contains("Oto"))
             System.out.println("Oto yazisi vardir");
 
         else
