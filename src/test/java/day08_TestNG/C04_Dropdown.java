@@ -1,4 +1,4 @@
-/*  package day08_TestNG;
+package day08_TestNG;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -15,9 +15,7 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 import java.util.List;
 
-
 public class C04_Dropdown {
-
     // ● Bir class oluşturun: C3_DropDownAmazon
 
 
@@ -71,6 +69,4 @@ public class C04_Dropdown {
 
     }
 
-
 }
-*/

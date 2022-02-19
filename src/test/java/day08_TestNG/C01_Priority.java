@@ -1,4 +1,4 @@
-/* package day08_TestNG;
+package day08_TestNG;
 
 import org.testng.annotations.Test;
 
@@ -22,6 +22,4 @@ public class C01_Priority {
         System.out.println("Bestbuy testi calisti");
     }
 
-
 }
-*/
