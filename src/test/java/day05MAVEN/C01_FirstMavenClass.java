@@ -1,4 +1,4 @@
-package day05MavenBatch44;
+package day05MAVEN;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;

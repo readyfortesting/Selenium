@@ -1,4 +1,4 @@
-/*  package day15_YeniProjeVeDersNotlari;
+package day15_YeniProjeVeDersNotlari;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
@@ -58,4 +58,3 @@ public class C01_Screenshot extends TestBase {
 }
 
 
- */

@@ -1,4 +1,4 @@
-/* package day09_TestNG;
+package day09_TestNG;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -95,4 +95,3 @@ public class C02_SoftAssertion {
         driver.close();
     }
 }
-*/

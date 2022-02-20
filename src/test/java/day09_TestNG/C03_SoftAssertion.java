@@ -1,4 +1,4 @@
-/* package day09_TestNG;
+ package day09_TestNG;
 
 
 import org.testng.annotations.Test;
@@ -26,4 +26,3 @@ public class C03_SoftAssertion {
         System.out.println("eger softassert'lerden fail olan varsa bu satir calismaz");
     }
 }
-*/
