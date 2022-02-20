@@ -1,4 +1,4 @@
-/* package day10_TestNG;
+package day10_TestNG;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class C02_C02_BasicAuthentication {
+public class C02_BasicAuthentication {
 
 // 1- Bir class olusturun : BasicAuthentication
     //2- https://the-internet.herokuapp.com/basic_auth sayfasina gidin
@@ -61,4 +61,3 @@ public class C02_C02_BasicAuthentication {
         driver.close();
     }
 }
-*/

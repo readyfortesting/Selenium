@@ -1,4 +1,4 @@
-/*  package day10_TestNG;
+ package day10_TestNG;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -82,4 +82,3 @@ public class C01_Allerts {
     }
 
 }
-*/
