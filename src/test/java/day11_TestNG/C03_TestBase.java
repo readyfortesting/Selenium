@@ -1,4 +1,4 @@
-/* package day11_TestNG;
+package day11_TestNG;
 
 import org.testng.annotations.Test;
 import utilities.TestBase;
@@ -17,4 +17,3 @@ public class C03_TestBase extends TestBase {
 }
 
 
- */

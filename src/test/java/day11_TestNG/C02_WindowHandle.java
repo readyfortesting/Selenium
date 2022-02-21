@@ -1,4 +1,4 @@
-/*  package day11_TestNG;
+ package day11_TestNG;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -86,4 +86,3 @@ public class C02_WindowHandle {
 }
 
 
- */
