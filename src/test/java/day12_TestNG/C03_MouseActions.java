@@ -1,4 +1,4 @@
-/* package day12_TestNG;
+package day12_TestNG;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -63,4 +63,3 @@ public class C03_MouseActions extends TestBase {
 }
 
 
- */

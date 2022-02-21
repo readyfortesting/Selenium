@@ -1,4 +1,4 @@
-/* package day12_TestNG;
+package day12_TestNG;
 
 
 import org.openqa.selenium.By;
@@ -44,5 +44,3 @@ public class C05_KeyboardActions extends TestBase {
     }
 }
 
-
- */
