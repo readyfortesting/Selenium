@@ -1,16 +1,17 @@
-/* package SeleniumENGLISH;
+ package SeleniumENGLISH;
+ import io.github.bonigarcia.wdm.WebDriverManager;
+ import org.junit.Assert;
+ import org.junit.Test;
+ import org.openqa.selenium.By;
+ import org.openqa.selenium.WebDriver;
+ import org.openqa.selenium.WebElement;
+ import org.openqa.selenium.chrome.ChromeDriver;
+
+ import java.time.Duration;
+ import java.util.List;
 
 public class Page02_Locators {
-    import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.Assert;
-import org.junit.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.time.Duration;
-import java.util.List;
 
 //public class E02_Locators {
 
@@ -28,6 +29,7 @@ import java.util.List;
     How to locate elements?
     WebElement elementName=driver.findElement(By.id("id value"));
 
+
  1->   >id => driver.findElement(By.id(""));
     id="session_email">
     This element has an id,This is unique,Then I can use this id to locate the element.
@@ -44,7 +46,7 @@ import java.util.List;
  8->   >css   -> There are multiple ways to write css. => driver.findElement(By.css(""));
 
      */
-    /*
+
     @Test
     public void locators() throws InterruptedException{
 
@@ -74,9 +76,9 @@ import java.util.List;
     // I can also use linktext or partiallinktext because this is a link.
     //isDisplayed() return true if element is displayed.
     //Returns false if element is not displayed
-    //   WebElement addressesElement=driver.findElement(By.ByLinkText("Addresses"));
+     //   WebElement addressesElement=driver.findElement(By.LinkText("Addresses"));
     //   boolean addressesElementDisplayed=addressesElement.isDisplayed();
-    //  Assert.assertTrue(addressesElementDisplayed));
+    //Assert.assertTrue(addressesElementDisplayed));
 
 // sign out
     //  WebElement signOutElement=driver.findElement(By.ByLinkText("Sign out"));
@@ -96,5 +98,5 @@ import java.util.List;
     // driver.quit();
 
 
-//    }
-//}
+  }
+}

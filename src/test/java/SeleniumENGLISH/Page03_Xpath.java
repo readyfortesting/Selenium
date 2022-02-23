@@ -1,4 +1,4 @@
- /* package SeleniumENGLISH;
+ package SeleniumENGLISH;
 
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -15,6 +15,30 @@ public class Page03_Xpath {
     @Test
 
     public void xpath_css(){
+
+        WebDriverManager.chromedriver().setup();
+        driver=new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.get("http://a.testaddressbook.com/sign_in");
+
+
+        //Locating emailbox using xpath
+        WebElement emailBox=driver.findElement(By.xpath("//input[@id='session_email']"));
+        //typing the email
+        emailBox.sendKeys("testtechproed@gmail.com");
+        //Locating password box using xpath
+        WebElement passwordBox=driver.findElement(By.xpath("//input[@id='session_password']"));
+        //typing password
+        passwordBox.sendKeys("Test1234!");
+        //Locating sign in button
+        WebElement signInButton=driver.findElement(By.name("commit"));
+        //clicking
+        signInButton.click();
+
+        driver.close();
+
+    }
+}
 
         /* Xpath: There are multiple ways of writing xpath and css.
         Xpath is powerful locator to find the elements.
@@ -37,32 +61,14 @@ public class Page03_Xpath {
             - If there is no id, then I use other locators such as name.
             - If none of the regular locators works, then I write xpath,because I can write xpath for any elements.
 
-
-
-        WebDriverManager.chromedriver().setup();
-        driver=new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.get("http://a.testaddressbook.com/sign_in");
-
-        //Locating emailbox using xpath
-        WebElement emailBox=driver.findElement(By.xpath("//input[@id='session_email']"));
-        //typing the email
-        emailBox.sendKeys("testtechproed@gmail.com");
-        //Locating password box using xpath
-        WebElement passwordBox=driver.findElement(By.xpath("//input[@id='session_password']"));
-        //typing password
-        passwordBox.sendKeys("Test1234!");
-        //Locating sign in button
-        WebElement signInButton=driver.findElement(By.name("commit"));
-        //clicking
-        signInButton.click();
-
-        driver.close();
+         */
 
 
 
-    }
-}
 
 
-*/
+
+
+
+
+

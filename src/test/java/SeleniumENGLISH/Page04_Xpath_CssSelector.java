@@ -1,6 +1,9 @@
-/* package SeleniumENGLISH;
+package SeleniumENGLISH;
 
 public class Page04_Xpath_CssSelector {
+
+
+}
 
     /* There are 8 locators
     -> id,name,className,linkText,partialLinkText,xpath,cssSelector
