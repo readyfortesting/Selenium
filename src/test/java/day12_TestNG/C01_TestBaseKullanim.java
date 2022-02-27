@@ -1,11 +1,11 @@
 /* package day12_TestNG;
 
+import day10_TestNG.C01_Allerts;
 import org.testng.annotations.Test;
 import tests.day10.C01_Allerts;
 import utilities.TestBase;
 
-public class C01_TestBase {
-
+public class C01_TestBaseKullanim {
 
     @Test
     public void test01(){
@@ -25,14 +25,12 @@ public class C01_TestBase {
         // ornegin biz testBase class'ini abstract yaptigimizdan obje olusturamayiz
         // ama child class'lardan TestrBase'deki setUp ve teardown method'larini kullanabiliriz
 
-        // TestBase obj1=new TestBase();
+         TestBase obj1=new TestBase();
 
 
 
     }
 
 }
-}
-
 
  */
