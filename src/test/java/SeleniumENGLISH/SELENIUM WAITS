@@ -1,0 +1,40 @@
+
+15)     What are the Selenium Waits?  !!!!**Thread.sleep() is NOT SELENIUM WAIT, it is a JAVA WAIT !!!!
+   => There are 3 selenium waits. Implicit,Explicit, Fluent wait. They are dynamic,we use them for wait issue or synchronization issue.
+
+       Can we use both implicit and explicit wait together?
+ => Technically yes we can use them together but NOT RECOMMENDED,because it might put additional wait.
+
+       Which one do you prefer,Why?
+ => I have an implicit wait in my TestBase class.It is very useful,because it handles minor wait issues.
+ However, I personally like explicit wait, because it works really well in expected conditions,such as when element is not visible
+ or load takes time, or element is not visible, or when there is a pop up, then explicit wait works better.
+ Manuel testing helps me to understand when specially use explicit wait.
+
+      What is the difference between implicit and explicit wait?
+ =>  1. Implicit wait is GLOBAL WAIT,it applies the wait automatically whenever driver is called.
+        Explicit wait is LOCAL WAIT, it can only be applied specific elements.
+
+
+     2. Explicit wait performance better especially under specific expected conditions. ( load takes time, or element is not visible, or when there is a pop up, then explicit wait works better).
+
+     3. Implicit wait has only one syntax.  //   driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        Explicit wait has more than one condition.
+
+     4. WebDriverWait object must be created for  Explicit wait.
+
+
+ => We cannot use explicit wait in TestBase because it is specific condition,case by case,element by element. We have to use explicit wait for ONLY ONE ELEMENT!
+  But we can use implicit wait once in TestBase and it will automatically apply because IMPLICIT WAIT IS GLOBAL!!
+
+    When your test case might fail?What are the possible reasons?
+ => Wrong locator (very common),Wait issue ,Page is slow,Element can be inside the Iframe or Alert, database issue, page can be heavy(multiple iframes,videos,popups...)
+or computer is slow-internet issue
+
+
+    What do you do when your test case fail?
+ => 1-READ the ERROR log/messge on the console. 2- DOUBLE CHECK ALWAYS.  3- Manuel test one more time (STEP BY STEP)
+    4-TRY DIFFERENT SOLUTIONS BASED ON THE ERROR.
+    5- IF YOU CANNOT FIGURE OUT THE SOLUTION FOR AUTOMATION,CHECK WITH YOUR TEAM MATES(ESPACIALLY LEADS)
+****DON'T BE SHY FOR ASKING YOUR QUESTIONS,BUT RESEARCH YOUR QUESTIONS FIRST TO UNDERSTAND WHAT TO DO BETTER.
+(Is there any recording that I can watch, is there any sample test case for researching, or can we do this test case together?)

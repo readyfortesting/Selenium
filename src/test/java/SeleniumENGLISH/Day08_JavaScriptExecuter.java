@@ -28,6 +28,7 @@ public class Day08_JavaScriptExecuter extends TestBase {
         je.executeScript("arguments[0].scrollIntoView(true);",ourRooms);
 
 
+
     }
     @Test
     public void clickWithJavaScripts(){
