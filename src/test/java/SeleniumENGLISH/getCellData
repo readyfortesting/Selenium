@@ -1,0 +1,43 @@
+@Test
+    public void getCellData(){ // All table Data one by one
+        //All table Data
+
+    driver.get("https://the-internet.herokuapp.com/tables");
+    System.out.println("**** All Cell Data ****");
+
+    int dataNumber=1;
+        List<WebElement> allCellData=driver.findElements(By.xpath("(//table[@id='table1'])//tbody//td"));
+    for (WebElement eachCellData: allCellData){
+        System.out.println("Data Number "+" =>> "+eachCellData.getText());
+
+        dataNumber++;
+
+
+    }
+}
+
+**** All Cell Data ****
+Data Number  =>> Smith
+Data Number  =>> John
+Data Number  =>> jsmith@gmail.com
+Data Number  =>> $50.00
+Data Number  =>> http://www.jsmith.com
+Data Number  =>> edit delete
+Data Number  =>> Bach
+Data Number  =>> Frank
+Data Number  =>> fbach@yahoo.com
+Data Number  =>> $51.00
+Data Number  =>> http://www.frank.com
+Data Number  =>> edit delete
+Data Number  =>> Doe
+Data Number  =>> Jason
+Data Number  =>> jdoe@hotmail.com
+Data Number  =>> $100.00
+Data Number  =>> http://www.jdoe.com
+Data Number  =>> edit delete
+Data Number  =>> Conway
+Data Number  =>> Tim
+Data Number  =>> tconway@earthlink.net
+Data Number  =>> $50.00
+Data Number  =>> http://www.timconway.com
+Data Number  =>> edit delete

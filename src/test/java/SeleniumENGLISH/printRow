@@ -1,0 +1,21 @@
+@Test
+    public void getRows(){ // this method will print ONLY the ROWS
+
+    driver.get("https://the-internet.herokuapp.com/tables");
+    System.out.println("**** Print Table Rows ****");
+    List<WebElement> tableRows=driver.findElements(By.xpath("(//table[@id='table1'])//tbody//tr"));
+    //how do you print the list??? =>> for each.
+    int rowNum=1;
+
+    for (WebElement eachRow:tableRows){
+        System.out.println("Row Number "+rowNum+"=> "+eachRow.getText());
+        rowNum++;
+
+        /* **** Print Table Rows ****
+           Row Number 1=> Smith John jsmith@gmail.com $50.00 http://www.jsmith.com edit delete
+           Row Number 2=> Bach Frank fbach@yahoo.com $51.00 http://www.frank.com edit delete
+           Row Number 3=> Doe Jason jdoe@hotmail.com $100.00 http://www.jdoe.com edit delete
+           Row Number 4=> Conway Tim tconway@earthlink.net $50.00 http://www.timconway.com edit delete
+         */
+
+    }

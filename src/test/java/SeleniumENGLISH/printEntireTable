@@ -1,0 +1,32 @@
+// <table> tag is used to create a table
+    //      <thead> is used to create a heading
+    //            <tr> is used to create a table row
+    //                <th> is used to create a table header data
+
+    //     <tbody> is used to create a table body
+
+    //            <td> is used to create a table cell
+
+    // We can automate the webtables data using SELENIUM
+    // We will interact the web elements,take care of the web elements using dynamic xpath.
+
+     // HOW TO WRITE XPATH FOR TABLE ELEMENTS
+
+    //- we can go from parent to child.
+    //  Last name : Smith    xpath>>>>>     (//table[@id='table1'])//tbody//tr[1]//td[1]
+    @Test
+    public void printEntireTable(){
+        driver.get("https://the-internet.herokuapp.com/tables");
+        System.out.println("**** Print Table Data ****");
+
+        WebElement entireTable=driver.findElement(By.xpath("//table[@id='table1']"));
+        System.out.println(entireTable.getText());
+
+    }
+
+         **** Print EntireTable Data ****
+    Last Name First Name Email Due Web Site Action
+    Smith John jsmith@gmail.com $50.00 http://www.jsmith.com edit delete
+    Bach Frank fbach@yahoo.com $51.00 http://www.frank.com edit delete
+    Doe Jason jdoe@hotmail.com $100.00 http://www.jdoe.com edit delete
+    Conway Tim tconway@earthlink.net $50.00 http://www.timconway.com edit delete

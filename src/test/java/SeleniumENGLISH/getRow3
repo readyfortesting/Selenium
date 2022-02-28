@@ -1,0 +1,13 @@
+@Test
+    public void getRow3(){ // Only row 3
+    driver.get("https://the-internet.herokuapp.com/tables");
+    System.out.println("**** Print only 3rd Row ****");
+
+    WebElement  row3=driver.findElement(By.xpath("(//table[@id='table1'])//tbody//tr[3]"));
+    System.out.println(row3.getText());
+
+    // **** Print only 3rd Row ****
+    // Doe Jason jdoe@hotmail.com $100.00 http://www.jdoe.com edit delete
+
+      **** Print only 3rd Row ****
+    Doe Jason jdoe@hotmail.com $100.00 http://www.jdoe.com edit delete

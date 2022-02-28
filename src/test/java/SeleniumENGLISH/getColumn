@@ -1,0 +1,20 @@
+
+@Test
+    public void getColumn(){
+        //get column 5
+    driver.get("https://the-internet.herokuapp.com/tables");
+    System.out.println("***** 5th Column Data");
+   List<WebElement> column5thData=driver.findElements(By.xpath("(//table[@id='table1'])//tr//td[5]"));
+    for (WebElement columnData : column5thData){
+        System.out.println(columnData.getText());
+    }
+
+}
+
+}
+
+                  ***** 5th Column Data
+                  http://www.jsmith.com
+                  http://www.frank.com
+                  http://www.jdoe.com
+                  http://www.timconway.com
