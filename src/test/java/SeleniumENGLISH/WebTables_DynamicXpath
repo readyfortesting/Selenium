@@ -1,0 +1,31 @@
+@Test
+           //Create a printCellData method
+           //printCellData(2,3) => 2nd row 3rd column
+           //printCellData(1,2) => 1st row 4th column
+
+    public void printCellData(int row, int column){  // this is exepts 2 parameters(int row, int column)
+        // we used try cacth because if there isnt a row for example  we wrote row 7 and there is no row7 so that we could get message we used try catch.
+
+        try {
+            String dynamicXpath="//table[@id='table1']//tbody//tr["+row+"]//td["+column+"]";
+            WebElement cellData=driver.findElement(By.xpath(dynamicXpath));
+            System.out.println("cellData = " + cellData.getText());
+
+        }catch (Exception e){
+            e.printStackTrace();
+            e.getMessage();
+
+        }
+
+
+
+
+}
+@Test
+    public void printCellTest(){
+    driver.get("https://the-internet.herokuapp.com/tables");
+    printCellData(1,5);  // cellData =  row 1, cell 5:   http://www.jsmith.com
+                                    // cellData =   row 2, cell 3:   fbach@yahoo.com
+}                                  //  cellData =   row 3, cell 4:   $100.00
+
+}
