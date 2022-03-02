@@ -27,7 +27,7 @@ public abstract class TestBaseRapor {
         extentHtmlReporter = new ExtentHtmlReporter(filePath);
         extentReports.attachReporter(extentHtmlReporter);
 
-        // İstediğiniz bilgileri buraya ekeyebiliyorsunuz.
+        // İstediğiniz bilgileri buraya ekleyebiliyorsunuz.
         extentReports.setSystemInfo("Enviroment","QA");
         extentReports.setSystemInfo("Browser", ConfigReader.getProperty("browser")); // chrome, firefox
         extentReports.setSystemInfo("Automation Engineer", "Mehmet");
