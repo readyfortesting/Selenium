@@ -17,11 +17,11 @@ public class Driver {
 
     private static WebDriver  driver;
 
+    //Create getDriver method to create and initialize the driver instance.
+   // the method must be public
     public static WebDriver getDriver(){
 
-
-
-        if(driver==null){   // bu if sayesinde kod calisirken bir kere new keyword ile driver olusturulaca
+        if(driver==null){   // bu if sayesinde kod calisirken bir kere new keyword ile driver olusturulacak
             // diger kullanimlarda new devreye girmeyecek
             switch (ConfigReader.getProperty("browser")){
 
@@ -38,7 +38,7 @@ public class Driver {
                     driver=new OperaDriver();
                     break;
                 case "safari":
-                    WebDriverManager.safaridriver().setup();
+                    WebDriverManager.getInstance(SafariDriver.class).setup();
                     driver=new SafariDriver();
                     break;
                 default:
@@ -48,11 +48,13 @@ public class Driver {
 
         }
 
-        driver.manage().window().maximize();
+
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        driver.manage().window().maximize();
         return driver;
     }
 
+    // closeDriver is used for closing the driver.
     public static void closeDriver(){
         if (driver!=null){
             driver.quit();
