@@ -1,5 +1,4 @@
  package SeleniumENGLISH;
- import io.github.bonigarcia.wdm.WebDriverManager;
  import org.junit.Assert;
  import org.junit.Test;
  import org.openqa.selenium.By;
@@ -7,10 +6,7 @@
  import org.openqa.selenium.WebElement;
  import org.openqa.selenium.chrome.ChromeDriver;
 
- import java.time.Duration;
- import java.util.List;
-
-public class Page02_Locators {
+ public class Day02_Locators {
 
 
 //public class E02_Locators {
