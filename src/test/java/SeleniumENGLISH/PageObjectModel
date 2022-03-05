@@ -1,0 +1,59 @@
+
+            PAGE OBJECT MODEL
+ => Page object model is a design. It is an improvement.
+ => %100 percent companies use Page Object Model? = No.
+ => We should use Page Object Model, it is better, to use reusable methods are always good in coding.
+ => JUnit is traditional framework without Page Object Model but also works perfectly.
+
+
+    > Set Up the Folder
+    > Set Up Classes
+    > Set Up Files
+    ** These are not created randomly. ** We need to know how to create folders,classes, internal files.
+
+ > Set Up the Folder
+    > pages
+        - LoginPage
+        - MainPage
+        - HotelRoomPage
+
+ > Set Up Classes
+     > tests
+
+     > utilities
+        - ConfigReader
+        - Driver
+        - TestBase
+        - ReusableMethods
+        - JSUtils
+        - ExcelUtils
+
+     > resources
+        -Capitals.xlsl
+        -Countries.xlsl
+
+ > Set Up Files
+
+    > configuration.properties
+
+        -browser=chrome
+        -admin_username=admin
+        -admin_password=Techproed123!
+        -wrong_manager_username=manager123
+        -wrong_manager_password=Manage!
+        -app_title=Caretta Hotel = Home
+        -test_address_url= http://a.testaddressbook.com/sign_in
+        -app_url_login=http://www.carettahotel.com/Account/Logon
+
+===================================================================================
+
+* We use Page Object Model in TestNG and CUCUMBER.
+- If you create a Loginpage  you can call  methods,logins from different classes.
+- When you create a username or password once, you don't have to create them again and again,because you can call them when needed!
+
+
+HOW TO CREATE A PAGE OBJECT MODEL FRAMEWORK FROM THE SCRATCH?
+
+=>>>   selenium=java
+=>>>   bonigarcia    THESE  <dependencies>  are MANDATORY!!!
+=>>>   testng
