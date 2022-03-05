@@ -1,6 +1,6 @@
 package SeleniumENGLISH;
 
-public class Page04_Xpath_CssSelector {
+public class Day04_Xpath_CssSelector {
 
 
 }
