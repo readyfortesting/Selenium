@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class Page03_Xpath {
+public class Day03_Xpath {
     WebDriver driver;
 
 
