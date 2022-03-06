@@ -228,3 +228,82 @@ We also have a suite for reggression tests to run in parallel.
 
 - I have a few small class that I run in parallel using DATA PROVIDER.
 For example, for my login tests, I have multiple credentials that I use for parallel testing.
+
+
+24) Jenkisns kullandiniz mi;biliyor musunuz?
+Jenkins Continuous Integration (CI) ve Continuous Deployment (CD) yaptigimiz bir tool.Projemizde kullandim.
+Ne yaptiniz projenizde? Devops'larin olusturdugu Jenkins adreslerine gittim
+- proje tanimlamak icin NEW ITEM kismina oge ekledim (deneme test)
+- Freestyle project secip OK butonuna tikladim.
+=> GENERAL
+- githup projesi ekleriz
+
+devops arkadaslardan aldigim username ve password  ile Jenkins kullandim. Jenkins biliyorum dememeliyiz bu DEVOPSlarin
+bilebilecegi bir tool,dolayisiyla Jenkins kullandim;kodlarimi githubu push ettim dememiz yeterli
+Jenkins ENTEGRASYONUNU BILIYORUM DEMEK YANLIS OLUR CUNKU BU DEVOPS LARIN GOREVI.
+
+25) CI CD toollari nedir? Jenkins onlardan biridir. *jENKINS*
+
+
+26) API ile WEB SERVIS arasindaki fark nedir?
+- Web servis internet uzerinden iletisim saglar API ise internet olmadan da iletisim saglayabilir.
+ORNEK: internet olmadan API bilgisayardaki dosyalara ulasmak,intellijde gerekli kutuphanelere ulasabilmek
+
+API testlerini boni garcia selenium da yaptiniz degil mi gibi TUZAK SORU sorulabilir> !!!
+
+CEVAP<>>>> *****API TESLERINDEbonigarcia web driver Selenium java ihtiyaCIMIZ YOK*** test yaptigimizda chroime veya firefox acilmayacagi icin ihticamiz da YOK.
+API WEBdriver kullanmiyor (explorer ya da browser kullanmaz),user interface e ihtiyacimiz YOK. http protokoller kullanarak bu islemleri yapiyoruz,database'de yapiyoruz biz bu islemleri diye cevap verrebiliriz.
+- Tum WEB Servisler API'dir, ancak tum API'ler WEB SERVIS degildir!!
+
+-API testlerini REST ASSURED ile yapiyorduk.
+-rEST aSSURED junit ve testNG gibi frameworklerle entegre edilebilir.
+cimiz yok
+
+
+27) Postman kullandiniz mi?
+- evet,ICERISINDE basit basit JAVASCRIPT TESTLERINI DE KULLANDIM
+-Bir bankanin api lerini manuel test etmek icin kullandim GET PUT DELETE gibi komutlari kullanarak bu islemleri yaptim.
+ben once POSTMAN de manuel olarak API testlerimi yapiyorum
+daha sonra intelliJ acarak otomasyon testlerimi gerceklestiriyorum.
+
+
+
+30) Serialization   De-Serialization nedir?
+Json formatinda Map var onu nasil Jsona donusturursunuz gibi de gelebilir soru.
+ Serialization : Expected datayi Assertion yapabilmek icin expected Datayi Jasondan Javaya donusturmeye Se
+De-Serialization : Harkli turdeki expected datayi Assertion yapabilmek icin Datayi Java'dan Json'a donusturmeye denir.
+
+===========================================================
+MY OWN QUESTIONS
+
+**1**.pAGE OBJECT MODELDE olusturdugumuz mesela Loginpage sayfasinda ilk olarak yapmamiz gerekenler nelerdir?
+
+1- public class LoginPage {
+2-    public    LoginPage(){ (Parametresiz Constructor olustururuz ismi ve yazilisi birebir ayni olmali yoksa null exeption hatasi verir.****)
+
+3-  PageFactory.initElements(Driver.getDriver(),this);   (we use this to instantiate the object!!)
+
+    }
+4- @FindBy(id = "account-menu")
+    public WebElement loginDropdown;
+
+
+**2** Page Object Modeli JUnit'de kullanabilir miyiz?
+- Evet kullanabiliriz, page object model bir desen gibi, boya gibi dusunursek evimizi boyayabiliriz.
+ Frameworkumuzde Junit annotationlari olmus olur ona gore dizayn ederiz,methodlari kullaniriz.
+
+
+**3** Smoke testte neler olacagina kim ya da kimler karar verebilir?
+Smoke test is need to be run everyday,it is important,major test. Test lead,Seniuor
+- We put smoketest package all of the major,important functionality of the application.
+-Smoke test should not have lots of tests,shouldn't have every details only importont functionalities.
+-For example customer creation is a VERY VERY IMPORTANT for a BANK.
+-Smoke tests shoult take 20 minutes no more, it should take less time but should cover important tests.
+
+           Who will decide?
+-Usually some responsible people does smoke test.Lead,Test lead or Senior Automation Tester.
+Usually experienced people decide it. If you are a new in project you won't do it.
+
+
+
+
