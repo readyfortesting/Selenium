@@ -1,7 +1,8 @@
 package SeleniumENGLISH;
 
-import org.junit.Assert;
+
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import utilities.TestBase;
 
