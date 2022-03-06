@@ -1,0 +1,230 @@
+
+!!!!!!!!!!****THEY LOOK AT YOU IF YOU ARE COMFORTABLE OR NOT. THIS IS VERY IMPORTANT.BE COMFORTABLE!!!!!!! %50 PERCENT IS BEING CONFIDENT!!!
+MANAGERS USUALLY DONT KNOW TECNIQUES MUCH. THEY CHECK YOUR BODY LANGUAGE,TALKING, IF YOU ARE CONFIDENT YOU WILL GET AN OFFER EASILY!!!
+
+
+
+INTERVIEW'DE SORSALAR 1) framworkUNUZDE inheritance kullandınız mı? Test Base'de kullandık.
+
+2) ImplicitlyWait ve ExplicitlyWait arasındaki fark nedir?
+
+ImplicitlyWait -> global bir bekleme süresidir,bütün test classımız için
+ExplicitliWait -> spesifik birişlem için bekler
+
+Thread.sleep ile Imlicitly Wait arasındaki farklar nelerdir?
+Thread.Sleep -> HARDWAİTTİR,BEKLENEN SÜRE KADAR BEKLER jAVADAN GELİR
+ImplicitlyWait -> DİNAMİKTİR,GÖREV ODAKLIDIR.O İŞLEM YAPILINCA HEMEN GEÇER.
+
+
+ * Which locator do you prefer?Why? ID/NAME/XPATH
+
+  *1: Which locator do you prefer?Why?
+   -(The answer should be) I prefer id,because id is unique.
+   - If there is no id, then I use other locators such as name.
+  - If none of the regular locators works, then I write xpath,because I can write xpath for any elements.
+*2: Do you use shortcut xpath or you write it manually?
+- I don't use shortcut,I prefer writing xpath manually.Because it is more stable.
+
+**-> Page Object Model ile uyumlu bir frameworkte çalıştım. <-***
+
+3) Can we
+
+
+3)  Singleton Pattern Nedir?
+/** Singleton Pattern Page Object Model gibi kabul edilmiş bir patterndir.
+         * *Tekli kullanım demek kelime anlami.
+        Amac:Singleton Pattern -> Bir classta birden fazla kullanima izin vermeyen kabul edilmis bir patterndir..
+        Bunun icin singleton pattern'de koruyacagimiz class'da parametresiz
+        bir constructor olusturur ve bu constructori private yapariz.
+         * SİSTEM CALİSTİGİ MÜDDETCE 2.BİR NESNE OLUSTURULMAZ.
+        Singleton sınıfının constructori private olmalidir.
+         Böylece o siniftan yeni instance oluşturmak engellenmiş olur.
+
+
+4) Where do you use static keyword in your framework? (Driver class)
+=> In my Driver class, our driver is static so it can be shared accross the framework (or so driver instance can be used globally in the framwork)
+
+
+
+5) En son IT ile ilgili hangi kaynaktan faydalandiniz,hangi kaynağı okudunuz?
+-
+
+6) When there is an id with number in it (u_b_3_cD like this)  don't use it, it is NOT RECOMMENDED. WHY?
+-> When you refresh the page,when you go to the page again it will change
+-> It will change just for the additional veryfication.it will change for security reason.
+Interview Question : HOW DO YOU HANDLE DYNAMIC ID?
+
+=> Dynamic id means id value can change.In this case, I don't prefer to use id.
+=> **** If I have to use it I WRITE DYNAMIC PATH to HANDLE IT!!!!
+-> ı find what is the same every single time then I write dynamic xpath.
+-> I can use contains, start-with or ends-with,dynamic xpath.
+
+1- I can use DYNAMIC XPATH to HANDLE it -> id_"u_2_bdG"
+2- I can use startWith annotation to handle it
+3- I can use endWith annotation to handle it.
+
+7) Waterfall mu yoksa Agile methodology'sini tercih edersin?
+=> Agile methodologysinde calistim ama waterfall methodology'de de calisabilirim.
+
+8) Team'de bir problem,bug ciktiginda nasil cozersin,ne yaparsin?
+=>Emin olmak icin 3-4 defa daha check ederim,bug'dan emin olunca takimdaki tecrubeli QA veya team lead'e haber veririm.
+
+
+9) (Popular Interview Question) How do you find the number of element in a dropdown,
+How do you find it? How do you automate it?
+=>
+
+10) Cucumber'la Paralel testing nasıl yapılır?
+
+11) How do you find the number in a Dropdown element,how do you automate it? ***MUTLAKA DOGRU CEVAPLANMASI GEREKEN BIR INTERVIEW SORUSU*** ENG/BATCH
+12) What is Alert? How do you handle ALERT?  ***MUTLAKA DOGRU CEVAPLANMASI GEREKEN BIR INTERVIEW SORUSU*** ENG/BATCH
+13) LOCATORS? How to write xpath?  ***MUTLAKA DOGRU CEVAPLANMASI GEREKEN BIR INTERVIEW SORUSU*** ENG/BATCH
+-Cookie interviewlerde pek sorulmaz!!!
+
+14) What is iframe,how do you handle it?
+
+15) What is RadioButton,how do you handle it?
+
+16) What is ActionsClass,how do you drag and drop?
+
+17) How do you find if the file exist or not?
+=> Selenium cannot directly test Desktop, or windows application, for that reason we use Java to check if a file path exist.
+  - How do you download the file?
+=> WE  cannot test the files with Selenium directly so that we use some JAVA CODES to test the files.
+=> We cannot understand if the file is downloaded or not with only Selenium,because file is downloaded on the computer IT IS OUTSIDE OF THE BROWSER SO WE CANT USE SELENIUM FOR THAT
+=>  How do you upload the file? We CAN UPLOAD wit SELENIUM. Because when the file is uploaded it is on the browser.
+
+18) WHAT is Javascript Executor? It is come from selenium,and it is a method. Java and Java script like CAR and CARPET sounding similar but tecnically there is NO RELATIONSHIP between them!!
+=> It is a Selenium API that is used for handling some element.Javascripts executer has some methods that makes automation effective.
+- How did you use it in your framework?
+=> I used js executer to click the elements. It works well handling the clicks.
+=> I also use it for scrolling. JS executer let us scroll onto the specific web elements.
+
+19)     What are the Selenium Waits?  !!!!**Thread.sleep() is NOT SELENIUM WAIT, it is a JAVA WAIT !!!!
+   => There are 3 selenium waits. Implicit,Explicit, Fluent wait. They are dynamic,we use them for wait issue or synchronization issue.
+
+       Can we use both implicit and explicit wait together?
+ => Technically yes we can use them together but NOT RECOMMENDED,because it might put additional wait.
+
+       Which one do you prefer,Why?
+ => I have an implicit wait in my TestBase class.It is very useful,because it handles minor wait issues.
+ However, I personally like explicit wait, because it works really well in expected conditions,such as when element is not visible
+ or load takes time, or element is not visible, or when there is a pop up, then explicit wait works better.
+ Manuel testing helps me to understand when specially use explicit wait.
+
+      What is the difference between implicit and explicit wait?
+ =>  1. Implicit wait is GLOBAL WAIT,it applies the wait automatically whenever driver is called.
+        Explicit wait is LOCAL WAIT, it can only be applied specific elements.
+
+
+     2. Explicit wait performance better especially under specific expected conditions. ( load takes time, or element is not visible, or when there is a pop up, then explicit wait works better).
+
+     3. Implicit wait has only one syntax.  //   driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        Explicit wait has more than one condition.
+
+     4. WebDriverWait object must be created for  Explicit wait.
+
+
+ => We cannot use explicit wait in TestBase because it is specific condition,case by case,element by element. We have to use explicit wait for ONLY ONE ELEMENT!
+  But we can use implicit wait once in TestBase and it will automatically apply because IMPLICIT WAIT IS GLOBAL!!
+
+    When your test case might fail?What are the possible reasons?
+ => Wrong locator (very common),Wait issue ,Page is slow,Element can be inside the Iframe or Alert, database issue, page can be heavy(multiple iframes,videos,popups...)
+or computer is slow-internet issue
+
+
+    What do you do when your test case fail?
+ => 1-READ the ERROR log/messge on the console. 2- DOUBLE CHECK ALWAYS.  3- Manuel test one more time (STEP BY STEP)
+    4-TRY DIFFERENT SOLUTIONS BASED ON THE ERROR.
+    5- IF YOU CANNOT FIGURE OUT THE SOLUTION FOR AUTOMATION,CHECK WITH YOUR TEAM MATES(ESPACIALLY LEADS)
+****DON'T BE SHY FOR ASKING YOUR QUESTIONS,BUT RESEARCH YOUR QUESTIONS FIRST TO UNDERSTAND WHAT TO DO BETTER.
+(Is there any recording that I can watch, is there any sample test case for researching, or can we do this test case together?)
+
+
+
+20) What is Apache POI, How do you work with excel?
+=>  We use Apache Poi dependencies, there are 2 of dependencies in MVN repository.
+
+21) How do you know the total number of row on an excel?
+- getPhysicalNumberOfRows(); we can also use this method to get a  TOTAL ROW NUMBER,
+- getLastRowNum();
+
+22) What is MAP; how do you use it,How do you add data inside the MAP?
+-  Map<String,String> countryCapital=new HashMap<>();  //using loop to get each cell data and store in the map.
+- // Map put function is used to add key value pairs inside the map.
+     countryCapital.put(countries,capitals);
+
+23) Extent reports,Reports?
+=> Extent reports used for customizeD HTML reports.
+=> It is used to add steps on the test case when needed.
+=> We have the extent reports set ups in the TestBase(Report)
+
+
+24- What is DataProvider? =>>>
+Data provider is used to supply test data.
+It automatically iterated the set of data.
+*** (What is good about DataProvider : It automatically iterates so you don't have to use LOOP when there are multiple data)***
+*** It automatically provides the data one by one****
+ @DataProvider Annotation to get the data.
+
+With data provider, we can get the data in different ways: get from a Json file,
+get from an excel file, get directly from the method.
+
+How did you use DataProvider in your Framework?
+
+=> I used data provider in my testing framework to supply data for my smoke tests.
+For example, I have different login credentials.
+I store the credentials in excel sheet. I use Data provider to get data from the excel sheet.
+I have login sheet to login. I use data provider to get data from login sheet.
+I have customer sheet to create customers. I use data provider to get data from customer sheet.
+I have account into sheet to create account. I use data provider to get data from account sheet.
+
+Data provider has 2 important parameters:
+1.name (alternative method name=optional)
+2.parallel (for parallel testing- optional,not mandatory)
+
+
+24) Who provide Data? Who gives you test DATA?
+
+TestData comes from different people.
+
+1- First option*** Business Analyst providing the data.***
+2- Sometimes Product Owner
+3- Sometimes Developer or test lead or sometimes manuel testers.
+
+
+25=What is TestNG xml files?
+=>> It is an xml file. We can create different test suites such as smoke test,reggression tests.
+We can basically create specific test runner groups.
+
+26= TestNG Parallel testing?   (POPULAR INTERVIEW QUESTION)
+
+Parallel testing means running the test case in multiple thread or multiple different browsers at the same time.
+We can do parallel testing using TestNG xml file.
+
+
+27)  * Do you know parallel testing?
+- Yes, I know.
+
+     * How do you do parallel tesing?
+- In my TestNG framework
+   I create xml files to run tests in parallel and thread-count.
+   Alternatively, we can use data provider to run tests in parallel using again parallel and data provider-thread-count.
+
+
+     * What is thread-count?
+- Thread means the code. It will be same as the number of browser.
+
+     * What is thread-safe? (It is about synchronization.)
+- It means synchronized codes. In thread-safe, we can run multiple code in parallel.
+-TestNG is thread-safe. It let us run the parallel testing with no issue.
+
+     * Why do you do parallel testing?
+- To save time.
+- We normally don't do parallel testing for one test. But when there are multiple test cases, then parallel testing saves a lot of time.
+For example, I have a parallel test suite for my smoke test.
+We also have a suite for reggression tests to run in parallel.
+- I also have some end to end test suite that I can run in parallel.
+
+- I have a few small class that I run in parallel using DATA PROVIDER.
+For example, for my login tests, I have multiple credentials that I use for parallel testing.
