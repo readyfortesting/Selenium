@@ -35,7 +35,7 @@ public class Day12_Assertions {
 
         SoftAssert softAssert=new SoftAssert();
         System.out.println("This is line 33");
-        softAssert.assertEquals(4,5); // fail.    This will be on the console because it will FAILED
+        softAssert.assertEquals(5,5); // fail.    This will be on the console because it will FAILED
         System.out.println("This is line 35");
         softAssert.assertTrue("Java".contains("e")); // fail.  This will be on the console because it will FAILED
         System.out.println("This is line 37");
