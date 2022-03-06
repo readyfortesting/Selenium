@@ -1,4 +1,4 @@
-package day06_JUNIT;
+/*package day06_JUNIT;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
@@ -50,3 +50,5 @@ public class C03_IlkTestMethodu {
         driver.close();
     }
 }
+
+ */
