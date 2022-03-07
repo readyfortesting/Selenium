@@ -43,7 +43,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
-public class Day_12TestNGAnnotations {
+public class Day12_TestNGAnnotations {
 
     @BeforeMethod
     public void setUp(){
