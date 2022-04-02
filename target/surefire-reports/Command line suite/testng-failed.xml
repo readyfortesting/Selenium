@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Command line suite]" verbose="0">
+  <test thread-count="5" name="Command line test(failed)" verbose="0">
+    <classes>
+      <class name="SeleniumENGLISH.Day08_FileDownloadTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="setUp"/>
+          <include name="downloadTEST"/>
+        </methods>
+      </class> <!-- SeleniumENGLISH.Day08_FileDownloadTest -->
+      <class name="SeleniumENGLISH.Day08_FileExistTest">
+        <methods>
+          <include name="isExist"/>
+        </methods>
+      </class> <!-- SeleniumENGLISH.Day08_FileExistTest -->
+      <class name="SeleniumENGLISH.Day08_FileUploadTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="setUp"/>
+          <include name="fileUploadTest"/>
+        </methods>
+      </class> <!-- SeleniumENGLISH.Day08_FileUploadTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->
